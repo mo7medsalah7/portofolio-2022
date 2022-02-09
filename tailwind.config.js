@@ -10,6 +10,10 @@ module.exports = {
 	theme: {
 		extend: {
 			screens: {},
+			fontFamily: {
+				sans: "Lato",
+				montserrat: "Montserrat Alternates",
+			},
 		},
 	},
 	variants: {

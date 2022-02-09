@@ -3,18 +3,32 @@
 @tailwind utilities;
 
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap");
 
 @layer utilities {
 	.main-font {
-		font-family: "Lato";
+		font-family: "Lato", "sans-serif";
+	}
+	@media screen and (max-width: 768px) {
+		.brandName {
+			text-shadow: 4px 4px #ff1f8f, 8px 8px #000000 !important;
+		}
+	}
+	.brandName {
+		font-family: "Bangers", "sans-serif";
+		letter-spacing: 0.1em;
+		-webkit-text-fill-color: transparent;
+		-webkit-text-stroke-width: 3px;
+		-webkit-text-stroke-color: white;
+		text-shadow: 8px 8px #ff1f8f, 20px 20px #000000;
 	}
 }
 
 .basicBtn {
-	@apply cursor-pointer bg-[#1f1b1b] text-white rounded-full shadow-xl px-4 py-2 hover:bg-transparent hover:text-[#1f1b1b] hover:border-2 hover:border-[#1f1b1b] hover:animate-bounce;
+	@apply cursor-pointer bg-[#1f1b1b] text-white rounded-full shadow-xl px-4 py-1 md:py-2 hover:bg-transparent hover:text-[#1f1b1b] hover:border-2 hover:border-[#1f1b1b] hover:animate-bounce;
 }
 .secondBtn {
-	@apply cursor-pointer bg-transparent text-[#1f1b1b] rounded-full shadow-xl px-4 py-2 border-2 border-[#1f1b1b] hover:animate-bounce;
+	@apply cursor-pointer bg-transparent text-[#1f1b1b] rounded-full shadow-xl px-4 py-1 md:py-2 border-2 border-[#1f1b1b] hover:animate-bounce;
 }
 .sectionTitle {
 	@apply text-5xl font-bold   text-gray-600 p-4 mb-5 max-w-max;

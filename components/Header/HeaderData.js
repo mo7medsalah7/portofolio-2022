@@ -1,5 +1,5 @@
 import Image from "next/image";
-import BackgroundImage from "./bg.png";
+import BackgroundImage from "./mosalah.png";
 function HeaderData() {
 	return (
 		<div className=" bg-[#f7c71f]  flex  m-auto">
@@ -7,10 +7,10 @@ function HeaderData() {
 				<div className=" m-auto">
 					<div className="flex flex-col">
 						<div className="mb-6">
-							<h1 className="sm:text-4xl md:text-5xl lg:text-8xl font-bold ">
+							<h1 className="text-4xl md:text-8xl lg:text-9xl font-bold brandName">
 								Mo Salah
 							</h1>
-							<p className="">
+							<p className="text-base md:text-2xl">
 								Let's collaborate on your next project.
 							</p>
 						</div>

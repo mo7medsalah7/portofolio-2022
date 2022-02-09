@@ -1,7 +1,8 @@
 import Head from "next/head";
-import HeaderData from "./components/Header/HeaderData";
-import Skills from "./components/Skills/Skills";
-import Works from "./components/Works/Works";
+import HeaderData from "../components/Header/HeaderData";
+import Skills from "../components/Skills/Skills";
+import Works from "../components/Works/Works";
+import Tabs from "../components/Tabs";
 
 export default function Home() {
 	return (
@@ -16,6 +17,7 @@ export default function Home() {
 			<main className="main-font overflow-hidden">
 				<Skills />
 				<Works />
+				<Tabs />
 			</main>
 		</div>
 	);
