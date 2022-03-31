@@ -19,7 +19,7 @@ function HeaderData() {
 								<button type="submit">Let's Work</button>
 							</div>
 							<div className="secondBtn">
-								<button className=" " type="submit">
+								<button className="" type="submit">
 									See My Works
 								</button>
 							</div>

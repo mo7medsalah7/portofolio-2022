@@ -2,44 +2,35 @@ import WrapperSection from "../WrapperSection";
 import Card from "./Card";
 import ParadisoScreen from "../../public/paradiso.png";
 import NetflixCloneScreen from "../../public/netflix-clone.png";
+import RealStateScreen from "../../public/real-estate.png";
+
 console.log(ParadisoScreen);
 
 const worksDetails = [
 	{
 		projectName: "Paradiso",
 		projectLink: "https://paradiso-gate.herokuapp.com/",
+		cloudinary_image_v: "v1648737039",
+		cloudinary_image_name: "paradiso-hero",
 		projectDesc: "app for movies exploring.",
-		projectScreen: `${ParadisoScreen}`,
+		projectScreen: ParadisoScreen,
 	},
 	{
 		projectName: "Netflix Clone",
 		projectLink: "https://netflix-clone-phi-ruby.vercel.app/",
 		projectDesc: "A clone for the netflix main header.",
-		projectScreen: `${NetflixCloneScreen}`,
+		cloudinary_image_v: "v1648737590",
+		cloudinary_image_name: "netflix-hero_rvrdfr",
+		projectScreen: NetflixCloneScreen,
 	},
 	{
-		projectName: "Quiz App",
-		projectLink: "https://quizzy-eazy-app.herokuapp.com/",
-		projectDesc: "A React quiz app.",
-		projectScreen: `${NetflixCloneScreen}`,
-	},
-	{
-		projectName: "Paradiso",
-		projectLink: "https://paradiso-gate.herokuapp.com/",
-		projectDesc: "app for movies exploring.",
-		projectScreen: `${ParadisoScreen}`,
-	},
-	{
-		projectName: "Netflix Clone",
-		projectLink: "https://netflix-clone-phi-ruby.vercel.app/",
-		projectDesc: "A clone for the netflix main header.",
-		projectScreen: `${NetflixCloneScreen}`,
-	},
-	{
-		projectName: "Quiz App",
-		projectLink: "https://quizzy-eazy-app.herokuapp.com/",
-		projectDesc: "A React quiz app.",
-		projectScreen: `${NetflixCloneScreen}`,
+		projectName: "Real Estate Explore",
+		projectLink:
+			"https://real-estate-explorer-fiye0ru7t-mo7medsalah7.vercel.app/",
+		projectDesc: "Explore a room !",
+		cloudinary_image_v: "v1648738635",
+		cloudinary_image_name: "real-estate_gcjogr",
+		projectScreen: RealStateScreen,
 	},
 ];
 
@@ -69,12 +60,20 @@ function Works() {
 						<span>Nextjs & React</span>
 					</div>
 				</header>
-				<div className="container mx-auto shadow-md shadow-grey-400">
-					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+				<div className="container mx-auto shadow-grey-400">
+					<div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 						{worksDetails.map((project) => {
 							return (
 								<>
-									<Card project={project} />{" "}
+									<Card
+										project={project}
+										cloudinary_image_v={
+											project.cloudinary_image_v
+										}
+										cloudinary_image_name={
+											project.cloudinary_image_name
+										}
+									/>
 								</>
 							);
 						})}
