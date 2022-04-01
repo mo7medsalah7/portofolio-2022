@@ -38,31 +38,38 @@ const worksDetails = [
 const JsWorksDetails = [
 	{
 		projectName: "Colour Flipper",
-		projectLink: "https://paradiso-gate.herokuapp.com/",
+		projectLink:
+			"https://javascript-projects-salah.netlify.app/color-flipper/index.html",
 	},
 	{
 		projectName: "Counter",
-		projectLink: "https://paradiso-gate.herokuapp.com/",
+		projectLink:
+			"https://javascript-projects-salah.netlify.app/counter/index.html",
 	},
 	{
 		projectName: "Menu",
-		projectLink: "https://paradiso-gate.herokuapp.com/",
+		projectLink:
+			"https://javascript-projects-salah.netlify.app/menu/index.html",
 	},
 	{
 		projectName: "Modal",
-		projectLink: "https://paradiso-gate.herokuapp.com/",
+		projectLink:
+			"https://javascript-projects-salah.netlify.app/modal/index.html",
 	},
 	{
 		projectName: "Music Player",
-		projectLink: "https://paradiso-gate.herokuapp.com/",
+		projectLink:
+			"https://javascript-projects-salah.netlify.app/music-player/index.html",
 	},
 	{
-		projectName: "Colour Flipper",
-		projectLink: "https://paradiso-gate.herokuapp.com/",
+		projectName: "Questions",
+		projectLink:
+			"https://javascript-projects-salah.netlify.app/questions/index.html",
 	},
 	{
-		projectName: "Colour Flipper",
-		projectLink: "https://paradiso-gate.herokuapp.com/",
+		projectName: "Reviews",
+		projectLink:
+			"https://javascript-projects-salah.netlify.app/reviews/index.html",
 	},
 ];
 
