@@ -6,6 +6,7 @@ import RealStateScreen from "../../public/real-estate.png";
 import BudgetPlusScreen from "../../public/budgetplus.png";
 
 import WorksHeader from "./WorksHeader";
+import Item from "../Item";
 
 console.log(ParadisoScreen);
 
@@ -47,38 +48,43 @@ const worksDetails = [
 
 const JsWorksDetails = [
   {
-    projectName: "Colour Flipper",
-    projectLink:
+    itemName: "Colour Flipper",
+    isLink: true,
+    itemLink:
       "https://javascript-projects-salah.netlify.app/color-flipper/index.html",
   },
   {
-    projectName: "Counter",
-    projectLink:
+    itemName: "Counter",
+    isLink: true,
+    itemLink:
       "https://javascript-projects-salah.netlify.app/counter/index.html",
   },
   {
-    projectName: "Menu",
-    projectLink:
-      "https://javascript-projects-salah.netlify.app/menu/index.html",
+    itemName: "Menu",
+    isLink: true,
+    itemLink: "https://javascript-projects-salah.netlify.app/menu/index.html",
   },
   {
-    projectName: "Modal",
-    projectLink:
-      "https://javascript-projects-salah.netlify.app/modal/index.html",
+    itemName: "Modal",
+    isLink: true,
+    itemLink: "https://javascript-projects-salah.netlify.app/modal/index.html",
   },
   {
-    projectName: "Music Player",
-    projectLink:
+    itemName: "Music Player",
+    isLink: true,
+    itemLink:
       "https://javascript-projects-salah.netlify.app/music-player/index.html",
   },
   {
-    projectName: "Questions",
-    projectLink:
+    itemName: "Questions",
+    isLink: true,
+    itemLink:
       "https://javascript-projects-salah.netlify.app/questions/index.html",
   },
   {
-    projectName: "Reviews",
-    projectLink:
+    itemName: "Reviews",
+    isLink: true,
+    itemLink:
       "https://javascript-projects-salah.netlify.app/reviews/index.html",
   },
 ];
@@ -114,20 +120,7 @@ function Works() {
         </div>
         <WorksHeader title={"Pure Javascript"} logo="js" />
         <div className="container mx-auto shadow-grey-400">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {JsWorksDetails.map((project) => {
-              return (
-                <>
-                  <Card
-                    project={project}
-                    cloudinary_image_v={project.cloudinary_image_v}
-                    cloudinary_image_name={project.cloudinary_image_name}
-                    cardType="purejs"
-                  />
-                </>
-              );
-            })}
-          </div>
+          <Item items={JsWorksDetails} isLink />
         </div>
       </div>
     </WrapperSection>
