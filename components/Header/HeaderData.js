@@ -114,12 +114,12 @@ function HeaderData() {
               </div>
               <div className="buttons flex gap-[12px]">
                 <div className="basicBtn">
-                  <button type="submit">Let's Work</button>
+                  <a type="submit">Let's Work</a>
                 </div>
                 <div className="secondBtn">
-                  <button className="" type="submit">
+                  <a className="" type="submit">
                     See My Works
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
