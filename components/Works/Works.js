@@ -87,6 +87,11 @@ const JsWorksDetails = [
     itemLink:
       "https://javascript-projects-salah.netlify.app/reviews/index.html",
   },
+  {
+    itemName: "Scroll",
+    isLink: true,
+    itemLink: "https://javascript-projects-salah.netlify.app/scroll/index.html",
+  },
 ];
 
 function Works() {
