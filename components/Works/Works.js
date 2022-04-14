@@ -4,6 +4,8 @@ import ParadisoScreen from "../../public/paradiso.png";
 import NetflixCloneScreen from "../../public/netflix-clone.png";
 import RealStateScreen from "../../public/real-estate.png";
 import BudgetPlusScreen from "../../public/budgetplus.png";
+import SimpleCalculatorScreen from "../../public/simple-calculator.png";
+
 
 import WorksHeader from "./WorksHeader";
 import Item from "../Item";
@@ -38,11 +40,19 @@ const worksDetails = [
   },
   {
     projectName: "Budget+",
-    projectLink: "https://budgetsplus.herokuapp.com/",
+    projectLink: "https://budget-traker.vercel.app/",
     cloudinary_image_v: "v1649784303",
     cloudinary_image_name: "budgetplus",
     projectDesc: "Your budget and expenses tracking.",
     projectScreen: BudgetPlusScreen,
+  },
+ {
+    projectName: "Calculator",
+    projectLink: "https://simple-calculator-j7vtrzcel-mo7medsalah7.vercel.app/  ",
+    cloudinary_image_v: "v1649961056",
+    cloudinary_image_name: "simple-calculator",
+    projectDesc: "A simple calculator.",
+    projectScreen: SimpleCalculatorScreen,
   },
 ];
 
