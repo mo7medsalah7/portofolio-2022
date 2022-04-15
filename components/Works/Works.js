@@ -6,7 +6,6 @@ import RealStateScreen from "../../public/real-estate.png";
 import BudgetPlusScreen from "../../public/budgetplus.png";
 import SimpleCalculatorScreen from "../../public/simple-calculator.png";
 
-
 import WorksHeader from "./WorksHeader";
 import Item from "../Item";
 
@@ -15,7 +14,7 @@ console.log(ParadisoScreen);
 const worksDetails = [
   {
     projectName: "Paradiso",
-    projectLink: "https://paradiso-gate.herokuapp.com/",
+    projectLink: "https://paradiso-movies-react.vercel.app/",
     cloudinary_image_v: "v1648737039",
     cloudinary_image_name: "paradiso-hero",
     projectDesc: "app for movies exploring.",
@@ -46,9 +45,10 @@ const worksDetails = [
     projectDesc: "Your budget and expenses tracking.",
     projectScreen: BudgetPlusScreen,
   },
- {
+  {
     projectName: "Calculator",
-    projectLink: "https://simple-calculator-j7vtrzcel-mo7medsalah7.vercel.app/  ",
+    projectLink:
+      "https://simple-calculator-j7vtrzcel-mo7medsalah7.vercel.app/  ",
     cloudinary_image_v: "v1649961056",
     cloudinary_image_name: "simple-calculator",
     projectDesc: "A simple calculator.",
