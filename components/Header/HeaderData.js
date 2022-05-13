@@ -1,6 +1,19 @@
+import React from "react";
 import Image from "next/image";
 import BackgroundImage from "./moSalah.png";
+import VanillaTilt from "vanilla-tilt";
+
 function HeaderData() {
+  const tiltRef = React.useRef();
+
+  React.useEffect(() => {
+    const tiltNode = tiltRef.current;
+    VanillaTilt.init(tiltNode, {
+      max: 25,
+      perspective: 800,
+    });
+  }, []);
+
   return (
     <div class="hero">
       <div class="snow ">
@@ -101,34 +114,34 @@ function HeaderData() {
       </div>
 
       <div className="  flex  ">
-        <div className=" flex w-full min-h-screen z-[5000]">
+        <div className=" flex w-full min-h-screen z-[1] bg-[#0e182a]">
           <div className=" m-auto">
             <div className="flex flex-col">
               <div className="mb-6">
                 <h1 className="text-4xl md:text-8xl lg:text-9xl font-bold brandName">
                   Mo Salah
                 </h1>
-                <p className="text-base md:text-2xl">
+                <p className="text-base md:text-2xl text-[#fff]">
                   Let's collaborate on your next project.
                 </p>
               </div>
               <div className="buttons flex gap-[12px]">
-                <div className="basicBtn">
-                  <a type="submit">Let's Work</a>
-                </div>
-                <div className="secondBtn">
-                  <a className="" type="submit">
+                <div className="">
+                  <button className="hero_button" type="submit">
                     See My Works
-                  </a>
+                  </button>
                 </div>
               </div>
             </div>
           </div>
           {/* Portofolio Image */}
-          <div className="m-auto hidden md:hidden lg:flex rounded-full border-8 border-solid border-[#ff1f8f] border-opacity-90">
+          <div
+            ref={tiltRef}
+            className="m-auto hidden md:hidden lg:flex border-8 border-solid border-[#46b9de] border-opacity-90"
+          >
             <Image
               src={BackgroundImage}
-              className=" rounded-full "
+              className=""
               alt="Picture of Mo Salah"
               layout="intrinsic"
             />

@@ -2,16 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bangers&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap");
 
 @layer utilities {
 	.main-font {
-		font-family: "Lato", "sans-serif";
+		font-family: "Gothic A1", sans-serif;
 	}
 	@media screen and (max-width: 768px) {
 		.brandName {
-			text-shadow: 2px 4px #ff1f8f, 3px 5px #000000 !important;
+			text-shadow: 2px 4px #46b9de, 3px 5px #fff !important;
 			margin-bottom: 0.5rem;
 		
 		}
@@ -22,9 +23,176 @@
 		-webkit-text-fill-color: transparent;
 		-webkit-text-stroke-width: 1.5px;
 		-webkit-text-stroke-color: #fff;
-		text-shadow: 8px 8px #ff1f8f, 20px 20px #000000;
+		text-shadow: 8px 8px ##fff, 20px 20px #fff;
 		margin-bottom: 1rem;
 	}
+
+	/**/
+		/* From uiverse.io by @namecho */
+button.hero_button,
+button.hero_button::after {
+ padding: 16px 20px;
+ font-size: 18px;
+ background: linear-gradient(45deg, transparent 5%, #40a8cc 5%);
+ border: 0;
+ color: #fff;
+ letter-spacing: 3px;
+ line-height: 1;
+ box-shadow: 6px 0px 0px #00e6f6;
+ outline: transparent;
+ position: relative;
+}
+
+button.hero_button::after {
+ --slice-0: inset(50% 50% 50% 50%);
+ --slice-1: inset(80% -6px 0 0);
+ --slice-2: inset(50% -6px 30% 0);
+ --slice-3: inset(10% -6px 85% 0);
+ --slice-4: inset(40% -6px 43% 0);
+ --slice-5: inset(80% -6px 5% 0);
+ content: "HOVER ME";
+ display: block;
+ position: absolute;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ background: linear-gradient(45deg, transparent 3%, #00e6f6 3%, #00e6f6 5%, #40a8cc 5%);
+ text-shadow: -3px -3px 0px #f8f005, 3px 3px 0px #00e6f6;
+ clip-path: var(--slice-0);
+}
+
+button.hero_button:hover::after {
+ animation: 1s glitch;
+ animation-timing-function: steps(2, end);
+}
+/**/
+
+/*Header Social Button*/
+/* From uiverse.io by @fanishah */
+.social_button {
+	font-family: inherit;
+	font-weight: 400;
+	background: #f2295b;
+	color: white;
+	padding: 0.35em 0;
+	font-size: 17px;
+	border: none;
+	border-radius: 0.7em;
+	letter-spacing: 0.08em;
+	position: relative;
+	display: flex;
+	align-content: center;
+	align-items: center;
+	overflow: hidden;
+	height: 2.1em;
+	padding-left: 3em;
+	padding-right: 0.7em;
+   }
+   
+   .social_button .icon {
+	background: #fff;
+	margin-right: 1em;
+	height: 2.2em;
+	width: 2.2em;
+	border-radius: 0.5em;
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	left: 0.3em;
+	transition: all .7s;
+   }
+   
+   .shere {
+	width: 1.3rem;
+	height: 1.3rem;
+	margin-left: 4px;
+   }
+   
+   .social_button:hover .icon {
+	width: calc(100% - 0.6rem);
+   }
+   
+   .social_button:hover .shere {
+	width: calc(100% - 0.6rem);
+	display: none;
+   }
+   
+   .social_button .icon-shere {
+	color: #f2295b;
+	width: 1.5rem;
+	height: 1.5rem;
+	display: none;
+   }
+   
+   .social_button:hover .icon .icon-shere {
+	display: flex;
+   }
+
+/*Header Social Button*/
+
+@keyframes glitch {
+ 0% {
+  clip-path: var(--slice-1);
+  transform: translate(-20px, -10px);
+ }
+
+ 10% {
+  clip-path: var(--slice-3);
+  transform: translate(10px, 10px);
+ }
+
+ 20% {
+  clip-path: var(--slice-1);
+  transform: translate(-10px, 10px);
+ }
+
+ 30% {
+  clip-path: var(--slice-3);
+  transform: translate(0px, 5px);
+ }
+
+ 40% {
+  clip-path: var(--slice-2);
+  transform: translate(-5px, 0px);
+ }
+
+ 50% {
+  clip-path: var(--slice-3);
+  transform: translate(5px, 0px);
+ }
+
+ 60% {
+  clip-path: var(--slice-4);
+  transform: translate(5px, 10px);
+ }
+
+ 70% {
+  clip-path: var(--slice-2);
+  transform: translate(-10px, 10px);
+ }
+
+ 80% {
+  clip-path: var(--slice-5);
+  transform: translate(20px, -10px);
+ }
+
+ 90% {
+  clip-path: var(--slice-1);
+  transform: translate(-10px, 0px);
+ }
+
+ 100% {
+  clip-path: var(--slice-1);
+  transform: translate(0);
+ }
+}
+
+	}
+body {
+	font-family: "Gothic A1", sans-serif;
+
 }
 
 .basicBtn {

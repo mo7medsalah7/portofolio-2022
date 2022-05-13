@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "dev": "next dev --port=3001",
+    "dev": "next dev --port=5000",
     "build": "next build",
     "start": "next start"
   },
@@ -10,7 +10,8 @@
     "cloudinary-build-url": "^0.2.4",
     "next": "latest",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "vanilla-tilt": "^1.7.2"
   },
   "devDependencies": {
     "autoprefixer": "^10.3.7",
