@@ -6,9 +6,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bangers&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap");
 
+
+@font-face {
+    font-family: 'Century Gothic';
+    src: url('/fonts/Century_Gothic.ttf') format('woff');
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Century Gothic';
+    src: url('/fonts/gothicb.ttf') format('woff');
+    font-style: bold;
+    font-weight: 700;
+    font-display: swap;
+  }
+
+
 @layer utilities {
 	.main-font {
-		font-family: "Gothic A1", sans-serif;
+		/* font-family: 'Century Gothic', sans-serif; */
 	}
 	@media screen and (max-width: 768px) {
 		.brandName {
@@ -32,11 +49,13 @@
 button.hero_button,
 button.hero_button::after {
  padding: 16px 20px;
+ font-style: normal;
  font-size: 18px;
  background: linear-gradient(45deg, transparent 5%, #40a8cc 5%);
  border: 0;
  color: #fff;
- letter-spacing: 3px;
+ letter-spacing: 1px;
+ text-rendering: optimizeLegibility;
  line-height: 1;
  box-shadow: 6px 0px 0px #00e6f6;
  outline: transparent;
@@ -191,8 +210,7 @@ button.hero_button:hover::after {
 
 	}
 body {
-	font-family: "Gothic A1", sans-serif;
-
+	font-family: "Century Gothic",sans-serif;
 }
 
 .basicBtn {
@@ -202,6 +220,8 @@ body {
 	@apply cursor-pointer bg-transparent text-[#1f1b1b] rounded-full shadow-xl px-4 py-1 md:py-2 border-2 border-[#1f1b1b] hover:animate-bounce;
 }
 .sectionTitle {
+	font-family: "Century Gothic",sans-serif;
+
 	@apply text-5xl font-bold   text-gray-600 p-4 mb-5 max-w-max;
 }
 
