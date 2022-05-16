@@ -31,7 +31,7 @@
 	}
 	@media screen and (max-width: 768px) {
 		.brandName {
-			text-shadow: 2px 4px #46b9de, 3px 5px #fff !important;
+			text-shadow: 2px 4px #46b9de, 3px 5px #0e182a !important;
 			margin-bottom: 0.5rem;
 		
 		}
@@ -39,10 +39,10 @@
 	.brandName {
 		font-family: "Bangers", "sans-serif";
 		letter-spacing: 0.1em;
-		-webkit-text-fill-color: transparent;
+		-webkit-text-fill-color: #0e182a;
 		-webkit-text-stroke-width: 1.5px;
 		-webkit-text-stroke-color: #fff;
-		text-shadow: 8px 8px ##fff, 20px 20px #fff;
+		text-shadow: 8px 8px ##fff, 20px 20px #0e182a;
 		margin-bottom: 1rem;
 	}
 
@@ -213,11 +213,11 @@ button.hero_button:hover::after {
 	}
 body {
 	font-family: "Century Gothic",sans-serif;
-	background: #0e182a;
-	color: #fff !important;	
+	background: #FFF;
+	color: #333 !important;	
 }
  h2, h3 {
-	color: #fff !important;	
+	color: #333 !important;	
 	 
  }
 

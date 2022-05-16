@@ -114,14 +114,14 @@ function HeaderData() {
       </div>
 
       <div className="  flex  ">
-        <div className=" flex w-full min-h-screen z-[1] bg-[#0e182a]">
+        <div className=" flex w-full min-h-screen z-[1] bg-[#fff]">
           <div className=" m-auto">
             <div className="flex flex-col">
               <div className="mb-6">
                 <h1 className="text-4xl md:text-8xl lg:text-9xl font-bold brandName">
                   Mo Salah
                 </h1>
-                <p className="text-base md:text-2xl text-[#fff]">
+                <p className="text-base md:text-2xl text-[#0e182a]">
                   Let's collaborate on your next project.
                 </p>
               </div>

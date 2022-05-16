@@ -7007,11 +7007,11 @@ function Skills() {
   return (
     <WrapperSection>
       <div className=" m-auto">
-        <div className=" sectionTitle border-red-500 border-t-8">
+        {/* <div className=" sectionTitle border-red-500 border-t-8">
           <h2 className="text-base sm:text-lg md:text-3xl lg:text-5xl">
             Skills
           </h2>
-        </div>
+        </div> */}
         <Item items={skillsItems} />
       </div>
     </WrapperSection>
