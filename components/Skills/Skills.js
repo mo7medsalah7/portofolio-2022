@@ -6893,6 +6893,7 @@ const skillsItems = [
     ),
   },
   {
+<<<<<<< HEAD
     itemName: "Ansible",
     isLink: false,
     logoLink: (
