@@ -60,7 +60,7 @@ const worksDetails = [
     projectLink: "  https://quiz-app-nine-sandy.vercel.app",
     cloudinary_image_v: "v1653238497",
     cloudinary_image_name: "QuizApp",
-    projectDesc: "A simple calculator.",
+    projectDesc: "A simple quiz app.",
     projectScreen: QuizAppScreen,
   },
 ];
