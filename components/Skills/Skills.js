@@ -1,10 +1,11 @@
+import React from "react";
 import Item from "../Item";
 import WrapperSection from "../WrapperSection";
 
 const skillsItems = [
   {
     itemName: "Docker",
-
+    skill: "devops",
     isLink: false,
     logoLink: (
       <svg viewBox="0 0 256 215" xmlns="http://www.w3.org/2000/svg">
@@ -79,6 +80,8 @@ const skillsItems = [
   },
   {
     itemName: "linux",
+    skill: "devops",
+
     isLink: false,
     logoLink: (
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192.756 192.756">
@@ -6894,6 +6897,8 @@ const skillsItems = [
   },
   {
     itemName: "Ansible",
+    skill: "devops",
+
     isLink: false,
     logoLink: (
       <svg
@@ -6914,6 +6919,8 @@ const skillsItems = [
   },
   {
     itemName: "AWS",
+    skill: "devops",
+
     isLink: false,
     logoLink: (
       <svg viewBox="-0.1 1.1 304.9 179.8" xmlns="http://www.w3.org/2000/svg">
@@ -6931,6 +6938,7 @@ const skillsItems = [
   {
     itemName: "Git",
     isLink: false,
+    skill: "devops",
 
     logoLink: (
       <svg
@@ -6949,6 +6957,7 @@ const skillsItems = [
   {
     itemName: "HTML5",
     isLink: false,
+    skill: "frontend",
 
     logoLink: (
       <svg
@@ -6974,6 +6983,7 @@ const skillsItems = [
   {
     itemName: "Jenkins",
     isLink: false,
+    skill: "devops",
 
     logoLink: (
       <svg
@@ -7138,6 +7148,7 @@ const skillsItems = [
   {
     itemName: "CSS3",
     isLink: false,
+    skill: "frontend",
 
     logoLink: (
       <svg
@@ -7163,6 +7174,7 @@ const skillsItems = [
   {
     itemName: "Javascript",
     isLink: false,
+    skill: "frontend",
 
     logoLink: (
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1052 1052">
@@ -7177,6 +7189,7 @@ const skillsItems = [
   {
     itemName: "React",
     isLink: false,
+    skill: "frontend",
 
     logoLink: (
       <svg viewBox="175.7 78 490.6 436.9" xmlns="http://www.w3.org/2000/svg">
@@ -7190,6 +7203,7 @@ const skillsItems = [
   {
     itemName: "NextJs",
     isLink: false,
+    skill: "frontend",
 
     logoLink: (
       <svg viewBox="0.5 -0.2 1023 1024.1" xmlns="http://www.w3.org/2000/svg">
@@ -7198,9 +7212,42 @@ const skillsItems = [
       </svg>
     ),
   },
+  {
+    itemName: "Tailwindcss",
+    isLink: false,
+    skill: "frontend",
+
+    logoLink: (
+      <svg
+        preserveAspectRatio="xMidYMid"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 256 153.6"
+      >
+        <linearGradient id="a" x1="-2.778%" y1="32%" y2="67.556%">
+          <stop offset="0" stop-color="#2298bd" />
+          <stop offset="1" stop-color="#0ed7b5" />
+        </linearGradient>
+        <path
+          d="M128 0C93.867 0 72.533 17.067 64 51.2 76.8 34.133 91.733 27.733 108.8 32c9.737 2.434 16.697 9.499 24.401 17.318C145.751 62.057 160.275 76.8 192 76.8c34.133 0 55.467-17.067 64-51.2-12.8 17.067-27.733 23.467-44.8 19.2-9.737-2.434-16.697-9.499-24.401-17.318C174.249 14.743 159.725 0 128 0zM64 76.8C29.867 76.8 8.533 93.867 0 128c12.8-17.067 27.733-23.467 44.8-19.2 9.737 2.434 16.697 9.499 24.401 17.318C81.751 138.857 96.275 153.6 128 153.6c34.133 0 55.467-17.067 64-51.2-12.8 17.067-27.733 23.467-44.8 19.2-9.737-2.434-16.697-9.499-24.401-17.318C110.249 91.543 95.725 76.8 64 76.8z"
+          fill="url(#a)"
+        />
+      </svg>
+    ),
+  },
 ];
 
+const devopsItems = () => {
+  const devops = skillsItems.filter((item) => item.skill === "devops");
+  return devops;
+};
+console.log(devopsItems());
+
+const frontendItems = () => {
+  const frontend = skillsItems.filter((item) => item.skill === "frontend");
+  return frontend;
+};
 function Skills() {
+  const [skill, setSkill] = React.useState("front");
   return (
     <WrapperSection>
       <div className=" m-auto">
@@ -7209,7 +7256,79 @@ function Skills() {
             Skills
           </h2>
         </div> */}
-        <Item items={skillsItems} />
+        <div className="m-auto text-center flex justify-center gap-1 mt-2 mb-12">
+          <button
+            className="c-button c-button--gooey"
+            onClick={() => setSkill("frontend")}
+          >
+            FrontEnd
+            <div class="c-button__blobs">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </button>
+          <svg
+            style={{ display: "block", height: 0, width: 0 }}
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <defs>
+              <filter id="goo">
+                <feGaussianBlur
+                  result="blur"
+                  stdDeviation="10"
+                  in="SourceGraphic"
+                ></feGaussianBlur>
+                <feColorMatrix
+                  result="goo"
+                  values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+                  mode="matrix"
+                  in="blur"
+                ></feColorMatrix>
+                <feBlend in2="goo" in="SourceGraphic"></feBlend>
+              </filter>
+            </defs>
+          </svg>
+          <button
+            className="c-button c-button--gooey"
+            onClick={() => setSkill("devops")}
+          >
+            DevOps
+            <div class="c-button__blobs">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <svg
+              style={{ display: "block", height: 0, width: 0 }}
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <defs>
+                <filter id="goo">
+                  <feGaussianBlur
+                    result="blur"
+                    stdDeviation="10"
+                    in="SourceGraphic"
+                  ></feGaussianBlur>
+                  <feColorMatrix
+                    result="goo"
+                    values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+                    mode="matrix"
+                    in="blur"
+                  ></feColorMatrix>
+                  <feBlend in2="goo" in="SourceGraphic"></feBlend>
+                </filter>
+              </defs>
+            </svg>
+          </button>
+        </div>
+        {skill === "devops" ? (
+          <Item items={devopsItems()} />
+        ) : (
+          <Item items={frontendItems()} />
+        )}
       </div>
     </WrapperSection>
   );
