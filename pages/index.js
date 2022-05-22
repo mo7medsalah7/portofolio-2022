@@ -2,7 +2,6 @@ import Head from "next/head";
 import HeaderData from "../components/Header/HeaderData";
 import Skills from "../components/Skills/Skills";
 import Works from "../components/Works/Works";
-import Tabs from "../components/Tabs";
 
 export default function Home() {
   return (

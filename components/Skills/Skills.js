@@ -5,7 +5,7 @@ import WrapperSection from "../WrapperSection";
 const skillsItems = [
   {
     itemName: "Docker",
-    skill: "devops",
+    skill: ["devops"],
     isLink: false,
     logoLink: (
       <svg viewBox="0 0 256 215" xmlns="http://www.w3.org/2000/svg">
@@ -80,7 +80,7 @@ const skillsItems = [
   },
   {
     itemName: "Linux",
-    skill: "devops",
+    skill: ["devops", "frontend"],
 
     isLink: false,
     logoLink: (
@@ -6897,7 +6897,7 @@ const skillsItems = [
   },
   {
     itemName: "Ansible",
-    skill: "devops",
+    skill: ["devops"],
 
     isLink: false,
     logoLink: (
@@ -6919,7 +6919,7 @@ const skillsItems = [
   },
   {
     itemName: "AWS",
-    skill: "devops",
+    skill: ["devops"],
 
     isLink: false,
     logoLink: (
@@ -6938,7 +6938,7 @@ const skillsItems = [
   {
     itemName: "Git",
     isLink: false,
-    skill: "devops",
+    skill: ["devops", "frontend"],
 
     logoLink: (
       <svg
@@ -6957,7 +6957,7 @@ const skillsItems = [
   {
     itemName: "HTML5",
     isLink: false,
-    skill: "frontend",
+    skill: ["frontend"],
 
     logoLink: (
       <svg
@@ -6983,7 +6983,7 @@ const skillsItems = [
   {
     itemName: "Jenkins",
     isLink: false,
-    skill: "devops",
+    skill: ["devops"],
 
     logoLink: (
       <svg
@@ -7148,7 +7148,7 @@ const skillsItems = [
   {
     itemName: "CSS3",
     isLink: false,
-    skill: "frontend",
+    skill: ["frontend"],
 
     logoLink: (
       <svg
@@ -7174,7 +7174,7 @@ const skillsItems = [
   {
     itemName: "Javascript",
     isLink: false,
-    skill: "frontend",
+    skill: ["frontend"],
 
     logoLink: (
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1052 1052">
@@ -7189,7 +7189,7 @@ const skillsItems = [
   {
     itemName: "React",
     isLink: false,
-    skill: "frontend",
+    skill: ["frontend"],
 
     logoLink: (
       <svg viewBox="175.7 78 490.6 436.9" xmlns="http://www.w3.org/2000/svg">
@@ -7203,7 +7203,7 @@ const skillsItems = [
   {
     itemName: "NextJs",
     isLink: false,
-    skill: "frontend",
+    skill: ["frontend"],
 
     logoLink: (
       <svg viewBox="0.5 -0.2 1023 1024.1" xmlns="http://www.w3.org/2000/svg">
@@ -7215,7 +7215,7 @@ const skillsItems = [
   {
     itemName: "Tailwindcss",
     isLink: false,
-    skill: "frontend",
+    skill: ["frontend"],
 
     logoLink: (
       <svg
@@ -7237,15 +7237,19 @@ const skillsItems = [
 ];
 
 const devopsItems = () => {
-  const devops = skillsItems.filter((item) => item.skill === "devops");
-  return devops;
+  const itemsHasDevops = skillsItems.filter((item) =>
+    item.skill.includes("devops")
+  );
+  return itemsHasDevops;
 };
-console.log(devopsItems());
 
 const frontendItems = () => {
-  const frontend = skillsItems.filter((item) => item.skill === "frontend");
-  return frontend;
+  const itemsHasFrontend = skillsItems.filter((item) =>
+    item.skill.includes("frontend")
+  );
+  return itemsHasFrontend;
 };
+
 function Skills() {
   const [skill, setSkill] = React.useState({
     skillType: "frontend",
@@ -7264,7 +7268,7 @@ function Skills() {
             onClick={() => setSkill({ skillType: "frontend" })}
           >
             FrontEnd
-            <div class="c-button__blobs">
+            <div className="c-button__blobs">
               <div></div>
               <div></div>
               <div></div>
@@ -7297,7 +7301,7 @@ function Skills() {
             onClick={() => setSkill({ skillType: "devops" })}
           >
             DevOps
-            <div class="c-button__blobs">
+            <div className="c-button__blobs">
               <div></div>
               <div></div>
               <div></div>

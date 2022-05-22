@@ -2,6 +2,8 @@ import React from "react";
 import Image from "next/image";
 import BackgroundImage from "./moSalah.png";
 import VanillaTilt from "vanilla-tilt";
+import HeadShake from "react-reveal/HeadShake";
+import Slide from "react-reveal/Slide";
 
 function HeaderData() {
   const tiltRef = React.useRef();
@@ -118,9 +120,11 @@ function HeaderData() {
           <div className=" m-auto">
             <div className="flex flex-col">
               <div className="mb-6">
-                <h1 className="text-4xl md:text-8xl lg:text-9xl font-bold brandName">
-                  Mo Salah
-                </h1>
+                <HeadShake>
+                  <h1 className="text-4xl md:text-8xl lg:text-9xl font-bold brandName">
+                    Mo Salah
+                  </h1>
+                </HeadShake>
                 <p className="text-base md:text-2xl text-[#0e182a]">
                   Let's collaborate on your next project.
                 </p>
