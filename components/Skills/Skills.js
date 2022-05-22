@@ -79,7 +79,7 @@ const skillsItems = [
     ),
   },
   {
-    itemName: "linux",
+    itemName: "Linux",
     skill: "devops",
 
     isLink: false,
@@ -7247,7 +7247,9 @@ const frontendItems = () => {
   return frontend;
 };
 function Skills() {
-  const [skill, setSkill] = React.useState("front");
+  const [skill, setSkill] = React.useState({
+    skillType: "frontend",
+  });
   return (
     <WrapperSection>
       <div className=" m-auto">
@@ -7259,7 +7261,7 @@ function Skills() {
         <div className="m-auto text-center flex justify-center gap-1 mt-2 mb-12">
           <button
             className="c-button c-button--gooey"
-            onClick={() => setSkill("frontend")}
+            onClick={() => setSkill({ skillType: "frontend" })}
           >
             FrontEnd
             <div class="c-button__blobs">
@@ -7292,7 +7294,7 @@ function Skills() {
           </svg>
           <button
             className="c-button c-button--gooey"
-            onClick={() => setSkill("devops")}
+            onClick={() => setSkill({ skillType: "devops" })}
           >
             DevOps
             <div class="c-button__blobs">
@@ -7324,7 +7326,7 @@ function Skills() {
             </svg>
           </button>
         </div>
-        {skill === "devops" ? (
+        {skill.skillType === "devops" ? (
           <Item items={devopsItems()} />
         ) : (
           <Item items={frontendItems()} />

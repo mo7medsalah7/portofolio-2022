@@ -8,14 +8,14 @@ function Item({ items }) {
           <a href={item.itemLink} target="_blank">
             <div className="skill-item_ele justify-center items-center transition-transform delay-100 duration-100 shadow-lg p-3 border-b-2 border-[#f7c71f] cursor-pointer hover:animate-pulse hover:bg-[#f7c71f]">
               {!item.isLink ? (
-                <div className="w-6 h-6 md:w-12 md:h-12">{item.logoLink}</div>
+                <div className="w-6 h-6 md:w-8 md:h-8">{item.logoLink}</div>
               ) : null}
               <h3 className="sm:text-base md:text-lg">{item.itemName}</h3>
             </div>
           </a>
         ) : (
           <div className="skill-item_ele justify-center items-center transition-transform delay-100 duration-100 shadow-lg p-3 border-b-2 border-[#f7c71f] cursor-pointer hover:animate-pulse hover:bg-[#f7c71f]">
-            <div className="w-6 h-6 md:w-12 md:h-12">{item.logoLink}</div>
+            <div className="w-6 h-6 md:w-8 md:h-8">{item.logoLink}</div>
             <h3 className="sm:text-base md:text-lg">{item.itemName}</h3>
           </div>
         );
