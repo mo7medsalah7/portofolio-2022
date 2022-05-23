@@ -6,11 +6,9 @@ import RealStateScreen from "../../public/real-estate.png";
 import BudgetPlusScreen from "../../public/budgetplus.png";
 import SimpleCalculatorScreen from "../../public/simple-calculator.png";
 import QuizAppScreen from "../../public/QuizApp.png";
-import SearchFilterScreen from "../public/search-filter.png";
+import SearchFilterScreen from "../../public/search-filter.png";
 import WorksHeader from "./WorksHeader";
 import Item from "../Item";
-
-console.log(ParadisoScreen);
 
 const worksDetails = [
   {
@@ -20,6 +18,7 @@ const worksDetails = [
     cloudinary_image_name: "paradiso-hero",
     projectDesc: "app for movies exploring.",
     projectScreen: ParadisoScreen,
+    screenAlt: "website image",
   },
 
   {
@@ -30,6 +29,7 @@ const worksDetails = [
     cloudinary_image_v: "v1648738635",
     cloudinary_image_name: "real-estate_gcjogr",
     projectScreen: RealStateScreen,
+    screenAlt: "website image",
   },
   {
     projectName: "Budget+",
@@ -38,6 +38,7 @@ const worksDetails = [
     cloudinary_image_name: "budgetplus",
     projectDesc: "Your budget and expenses tracking.",
     projectScreen: BudgetPlusScreen,
+    screenAlt: "website image",
   },
   {
     projectName: "Calculator",
@@ -47,6 +48,7 @@ const worksDetails = [
     cloudinary_image_name: "simple-calculator",
     projectDesc: "A simple calculator.",
     projectScreen: SimpleCalculatorScreen,
+    screenAlt: "website image",
   },
   {
     projectName: "Quiz App",
@@ -55,6 +57,7 @@ const worksDetails = [
     cloudinary_image_name: "QuizApp",
     projectDesc: "A simple quiz app.",
     projectScreen: QuizAppScreen,
+    screenAlt: "website image",
   },
   {
     projectName: "Search Filter App",
@@ -63,6 +66,7 @@ const worksDetails = [
     cloudinary_image_name: "search-filter",
     projectDesc: "Simple Filteration App.",
     projectScreen: SearchFilterScreen,
+    screenAlt: "website image",
   },
   {
     projectName: "Netflix Clone",
@@ -71,6 +75,7 @@ const worksDetails = [
     cloudinary_image_v: "v1648737590",
     cloudinary_image_name: "netflix-hero_rvrdfr",
     projectScreen: NetflixCloneScreen,
+    screenAlt: "website image",
   },
 ];
 

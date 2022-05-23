@@ -37,6 +37,7 @@ function Card({
               width="1360"
               height="600"
               className="rounded-[8px]"
+              alt={project.screenAlt}
             />
           ) : cardType == "purejs" ? null : null}
         </div>
