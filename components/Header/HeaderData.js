@@ -4,6 +4,7 @@ import BackgroundImage from "./moSalah.png";
 import VanillaTilt from "vanilla-tilt";
 import HeadShake from "react-reveal/HeadShake";
 import Slide from "react-reveal/Slide";
+import SocialMedia from "./SocialMedia";
 
 function HeaderData() {
   const tiltRef = React.useRef();
@@ -18,7 +19,7 @@ function HeaderData() {
 
   return (
     <div class="hero">
-      <div class="snow ">
+      <div class="snow z-0">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1024 1536"
@@ -115,7 +116,7 @@ function HeaderData() {
         </svg>
       </div>
 
-      <div className="">
+      <div className="z-50">
         <div
           className=" flex w-full min-h-screen z-[1] bg-[#fff]"
           style={{ width: "min(100% - 0rem)" }}
@@ -137,13 +138,14 @@ function HeaderData() {
                   </span>
                 </div>
               </div>
-              <div className="buttons flex gap-[12px]">
+              {/* <div className="buttons flex gap-[12px]">
                 <div className="">
                   <button className="hero_button" type="submit">
                     See My Works
                   </button>
                 </div>
-              </div>
+              </div> */}
+              <SocialMedia />
             </div>
           </div>
           {/* Portofolio Image */}
