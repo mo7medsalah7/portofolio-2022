@@ -6,7 +6,7 @@ import RealStateScreen from "../../public/real-estate.png";
 import BudgetPlusScreen from "../../public/budgetplus.png";
 import SimpleCalculatorScreen from "../../public/simple-calculator.png";
 import QuizAppScreen from "../../public/QuizApp.png";
-
+import SearchFilterScreen from "../public/search-filter.png";
 import WorksHeader from "./WorksHeader";
 import Item from "../Item";
 
@@ -21,14 +21,7 @@ const worksDetails = [
     projectDesc: "app for movies exploring.",
     projectScreen: ParadisoScreen,
   },
-  {
-    projectName: "Netflix Clone",
-    projectLink: "https://netflix-clone-phi-ruby.vercel.app/",
-    projectDesc: "A clone for the netflix main header.",
-    cloudinary_image_v: "v1648737590",
-    cloudinary_image_name: "netflix-hero_rvrdfr",
-    projectScreen: NetflixCloneScreen,
-  },
+
   {
     projectName: "Real Estate Explore",
     projectLink:
@@ -57,11 +50,27 @@ const worksDetails = [
   },
   {
     projectName: "Quiz App",
-    projectLink: "  https://quiz-app-nine-sandy.vercel.app",
+    projectLink: "https://quiz-appp.vercel.app/",
     cloudinary_image_v: "v1653238497",
     cloudinary_image_name: "QuizApp",
     projectDesc: "A simple quiz app.",
     projectScreen: QuizAppScreen,
+  },
+  {
+    projectName: "Search Filter App",
+    projectLink: "https://search-filter.vercel.app",
+    cloudinary_image_v: "v1653316745",
+    cloudinary_image_name: "search-filter",
+    projectDesc: "Simple Filteration App.",
+    projectScreen: SearchFilterScreen,
+  },
+  {
+    projectName: "Netflix Clone",
+    projectLink: "https://netflix-clone-phi-ruby.vercel.app/",
+    projectDesc: "A clone for the netflix main header.",
+    cloudinary_image_v: "v1648737590",
+    cloudinary_image_name: "netflix-hero_rvrdfr",
+    projectScreen: NetflixCloneScreen,
   },
 ];
 
