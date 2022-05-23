@@ -8,6 +8,10 @@ export default function Home() {
     <div className="">
       <Head>
         <title>Front Mo,S </title>
+        <meta
+          name="description"
+          content="Mohamed Salah Portofolio, A Frontend Developer and DevOps Engineer"
+        />
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
