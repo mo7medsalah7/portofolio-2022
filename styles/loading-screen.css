@@ -1,0 +1,10 @@
+/* From uiverse.io by @fanishah */
+.spinner .path {
+    animation: infinity-load 1.5s infinite cubic-bezier(.65,.05,.36,1)
+   }
+   
+   @keyframes infinity-load {
+    to {
+     stroke-dashoffset: 10
+    }
+   }

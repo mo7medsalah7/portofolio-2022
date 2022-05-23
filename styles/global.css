@@ -46,6 +46,24 @@
 		margin-bottom: 1rem;
 	}
 
+/*Pre Loader*/
+/* From uiverse.io by @fanishah */
+.spinner {
+	display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+.spinner .path {
+    animation: infinity-load 1.5s infinite cubic-bezier(.65,.05,.36,1)
+   }
+   
+   @keyframes infinity-load {
+    to {
+     stroke-dashoffset: 10
+    }
+   }
+/*Pre Loader*/
 	/**/
 		/* From uiverse.io by @namecho */
 button.hero_button,

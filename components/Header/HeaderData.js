@@ -115,19 +115,27 @@ function HeaderData() {
         </svg>
       </div>
 
-      <div className="  flex  ">
-        <div className=" flex w-full min-h-screen z-[1] bg-[#fff]">
+      <div className="">
+        <div
+          className=" flex w-full min-h-screen z-[1] bg-[#fff]"
+          style={{ width: "min(100% - 0rem)" }}
+        >
           <div className=" m-auto">
             <div className="flex flex-col">
               <div className="mb-6">
                 <HeadShake>
-                  <h1 className="text-4xl md:text-8xl lg:text-9xl font-bold brandName">
+                  <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold brandName">
                     Mo Salah
                   </h1>
                 </HeadShake>
-                <p className="text-base md:text-2xl text-[#0e182a]">
-                  Let's collaborate on your next project.
+                <p className="border-b-2 border-solid border-[#40a8cc]">
+                  Your Next
                 </p>
+                <div className="ml-2">
+                  <span className="sm:text-4xl md:text-4xl lg:text-4xl xl:text-4xl 2xl:text-7xl">
+                    Frontend Engineer, DevOps
+                  </span>
+                </div>
               </div>
               <div className="buttons flex gap-[12px]">
                 <div className="">
