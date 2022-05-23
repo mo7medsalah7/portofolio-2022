@@ -7,6 +7,7 @@ import BudgetPlusScreen from "../../public/budgetplus.png";
 import SimpleCalculatorScreen from "../../public/simple-calculator.png";
 import QuizAppScreen from "../../public/QuizApp.png";
 import SearchFilterScreen from "../../public/search-filter.png";
+import FormValidatorScreen from "../../public/form-validator.png";
 import WorksHeader from "./WorksHeader";
 import Item from "../Item";
 
@@ -66,6 +67,15 @@ const worksDetails = [
     cloudinary_image_name: "search-filter",
     projectDesc: "Simple Filteration App.",
     projectScreen: SearchFilterScreen,
+    screenAlt: "website image",
+  },
+  {
+    projectName: "Form Validator",
+    projectLink: "https://form-validator-u.vercel.app/",
+    cloudinary_image_v: "v1653346332",
+    cloudinary_image_name: "form-validator",
+    projectDesc: "A Form Validator Without Any External Libraries.",
+    projectScreen: FormValidatorScreen,
     screenAlt: "website image",
   },
   {
