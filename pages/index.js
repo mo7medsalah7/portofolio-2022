@@ -10,7 +10,12 @@ export default function Home() {
     <div className="">
       <Head>
         <title>Front Mo,S </title>
+        <meta
+          name="description"
+          content="Mohamed Salah Portofolio, A Frontend Developer and DevOps Engineer"
+        />
         <meta property="og:title" content="Front Mo,S" key="title" />
+        <meta property="og:type" content="website" />
         <meta
           property="og:description"
           content="Mohamed Salah Portofolio, A Frontend Developer and DevOps Engineer"
@@ -21,10 +26,6 @@ export default function Home() {
           content="https://res.cloudinary.com/dexrp1zlw/image/upload/v1653408002/my-portofolio/moSalah_jyd1gb.png"
         />
 
-        <meta
-          name="description"
-          content="Mohamed Salah Portofolio, A Frontend Developer and DevOps Engineer"
-        />
         <link rel="icon" href="/favicon.ico" />
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
