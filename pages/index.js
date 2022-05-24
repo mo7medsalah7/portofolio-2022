@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { useRouter } from "next/router";
 import image from "next/image";
 import Footer from "../components/Footer/Footer";
 import HeaderData from "../components/Header/HeaderData";
@@ -6,7 +7,11 @@ import Skills from "../components/Skills/Skills";
 import Works from "../components/Works/Works";
 import BackgroundImage from "../public/moSalah.png";
 
-export default function Home({ title, description, image, author }) {
+export default function Home(props) {
+  const router = useRouter();
+
+  let data = props.apiResponse;
+
   return (
     <div className="">
       <Head>
@@ -16,19 +21,19 @@ export default function Home({ title, description, image, author }) {
           name="viewport"
           content="width=device-width,minimum-scale=1,initial-scale=1"
         />
-        <title>{title} </title>
-        <meta name="title" property="og:title" content={title} />
+        <title>{props.title} </title>
+        <meta name="title" property="og:title" content={props.title} />
         <meta name="type" property="og:type" content="website" />
         <meta
           name="description"
           property="og:description"
-          content={description}
+          content={props.description}
         />
-        <meta name="image" property="og:image" content={image} />
+        <meta name="image" property="og:image" content={props.image} />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="625" />
 
-        <meta name="author" content={author} />
+        <meta name="author" content={props.author} />
 
         <link rel="icon" href="/favicon.ico" />
 
@@ -65,7 +70,8 @@ export default function Home({ title, description, image, author }) {
     </div>
   );
 }
-export async function getStaticProps(context) {
+
+export async function getServerSideProps(context) {
   return {
     props: {
       title: "Front Mo,S",
@@ -74,6 +80,6 @@ export async function getStaticProps(context) {
       image:
         "https://res.cloudinary.com/dexrp1zlw/image/upload/v1653409172/my-portofolio/image-seo.png",
       author: "Mohamed Salah Abdelazeem",
-    }, // will be passed to the page component as props
+    },
   };
 }
