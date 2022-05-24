@@ -38,7 +38,7 @@ export default function Home() {
       <header>
         <HeaderData />
       </header>
-      <main className="main-font overflow-hidden">
+      <main className="main-font overflow-hidden py-0 px-[20px] md:px-0">
         <Skills />
         <Works />
         <Footer />

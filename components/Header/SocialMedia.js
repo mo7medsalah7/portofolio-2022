@@ -76,7 +76,7 @@ function SocialMedia() {
               key={item.website_name}
             >
               <Link href={item.link}>
-                <a className="m-auto" target="_blank">
+                <a className="w-[50px] h-[50px] m-auto flex" target="_blank">
                   {item.logo}
                 </a>
               </Link>
