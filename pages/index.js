@@ -3,7 +3,7 @@ import Footer from "../components/Footer/Footer";
 import HeaderData from "../components/Header/HeaderData";
 import Skills from "../components/Skills/Skills";
 import Works from "../components/Works/Works";
-import BackgroundImage from "./moSalah.png";
+import BackgroundImage from "../public/moSalah.png";
 
 export default function Home() {
   return (
