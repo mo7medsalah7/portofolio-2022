@@ -5,7 +5,7 @@ import Skills from "../components/Skills/Skills";
 import Works from "../components/Works/Works";
 import BackgroundImage from "../public/moSalah.png";
 
-export default function Home() {
+export default function Home({ title }) {
   return (
     <div className="">
       <Head>
@@ -15,8 +15,8 @@ export default function Home() {
           name="viewport"
           content="width=device-width,minimum-scale=1,initial-scale=1"
         />
-        <title>Front Mo,S </title>
-        <meta name="title" property="og:title" content="Front Mo,S" />
+        <title>{title} </title>
+        <meta name="title" property="og:title" content={title} />
         <meta name="type" property="og:type" content="website" />
         <meta
           name="description"
@@ -67,4 +67,11 @@ export default function Home() {
       <Footer />
     </div>
   );
+}
+export async function getServerSideProps(context) {
+  return {
+    props: {
+      title: "Front Mo,S",
+    }, // will be passed to the page component as props
+  };
 }
