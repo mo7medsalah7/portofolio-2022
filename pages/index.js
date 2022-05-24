@@ -26,7 +26,7 @@ export default function Home() {
         <meta
           name="image"
           property="og:image"
-          content="https://res.cloudinary.com/dexrp1zlw/image/upload/v1653408002/my-portofolio/moSalah_jyd1gb.png"
+          content="https://res.cloudinary.com/dexrp1zlw/image/upload/v1653409172/my-portofolio/image-seo.png"
         />
         <meta name="author" content="Mohamed Salah Abdelazeem" />
 
