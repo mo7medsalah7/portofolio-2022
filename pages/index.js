@@ -22,6 +22,9 @@ export default function Home() {
           property="og:image"
           content="https://res.cloudinary.com/dexrp1zlw/image/upload/v1653409172/my-portofolio/image-seo.png"
         />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="625" />
+
         <meta name="author" content="Mohamed Salah Abdelazeem" />
 
         <link rel="icon" href="/favicon.ico" />
