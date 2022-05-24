@@ -22,18 +22,18 @@ export default function Home(props) {
           content="width=device-width,minimum-scale=1,initial-scale=1"
         />
         <title>{props.title} </title>
-        <meta name="title" property="og:title" content={props.title} />
-        <meta name="type" property="og:type" content="website" />
+        <meta name="og:title" property="og:title" content={props.title} />
+        <meta name="og:type" property="og:type" content="website" />
         <meta
-          name="description"
+          name="og:description"
           property="og:description"
           content={props.description}
         />
-        <meta name="image" property="og:image" content={props.image} />
+        <meta name="og:image" property="og:image" content={props.image} />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="625" />
 
-        <meta name="author" content={props.author} />
+        <meta name="og:author" content={props.author} />
 
         <link rel="icon" href="/favicon.ico" />
 
