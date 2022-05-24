@@ -14,17 +14,17 @@ function Footer() {
                   Mo Salah
                 </h4>
               </div>
-              <div className="px-4 text-base font-bold tracking-wider">
+              <div className="px-0 md:px-4 text-base font-bold tracking-wider">
                 <p className="capitalize">
                   A passionate frontend developer / DevOps engineer who dreams
                   of a world full of peace and love.
                 </p>
               </div>
-              <div className="pl-6 py-[2rem]">
+              <div className="pl-1 md:pl-6 py-[2rem]">
                 <SocialMedia />
               </div>
               {/* Telephone  */}
-              <div className="pl-6">
+              <div className="pl-1 md:pl-6">
                 <form>
                   <fieldset>
                     <legend className="text-2xl font-bold mb-[0.4rem]">

@@ -41,9 +41,9 @@ export default function Home() {
       <main className="main-font overflow-hidden py-0 px-[20px] md:px-0">
         <Skills />
         <Works />
-        <Footer />
         {/* <Tabs /> */}
       </main>
+      <Footer />
     </div>
   );
 }
