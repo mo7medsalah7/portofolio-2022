@@ -68,7 +68,7 @@ export default function Home({ title }) {
     </div>
   );
 }
-export async function getServerSideProps(context) {
+export async function getStaticProps(context) {
   return {
     props: {
       title: "Front Mo,S",
