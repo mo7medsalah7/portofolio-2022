@@ -16,7 +16,10 @@ export default function Home() {
           content="Mohamed Salah Portofolio, A Frontend Developer and DevOps Engineer"
           key="description"
         />
-        <meta property="og:image" content={BackgroundImage} />
+        <meta
+          property="og:image"
+          content="https://res.cloudinary.com/dexrp1zlw/image/upload/v1653408002/my-portofolio/moSalah_jyd1gb.png"
+        />
 
         <meta
           name="description"
