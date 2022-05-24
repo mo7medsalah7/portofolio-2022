@@ -149,7 +149,7 @@ function Works() {
       </div>
 
       <div className="text-left ">
-        <WorksHeader title={"Nextjs & React"} logo="nextjs" />
+        <WorksHeader title={"React & Nextjs "} logo="nextjs" />
         <div className="container mx-auto shadow-grey-400">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {worksDetails.map((project) => {
