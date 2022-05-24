@@ -5,7 +5,7 @@ import SocialMedia from "../Header/SocialMedia";
 function Footer() {
   return (
     <>
-      <div className="bg-[#58bfe1] p-6 text-white m-auto ">
+      <div className="footer_data bg-[#58bfe1] p-6 text-white m-auto ">
         <div className="flex flex-wrap">
           <div style={{ flex: "1 0 50%" }}>
             <div className="flex flex-col">

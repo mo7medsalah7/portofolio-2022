@@ -42,6 +42,10 @@
 		text-shadow: 8px 8px ##fff, 20px 20px #0e182a;
 		margin-bottom: 1rem;
 	}
+	.footer_data .brandName {
+		-webkit-text-fill-color: #fff;
+
+	}
 
 /*Pre Loader*/
 /* From uiverse.io by @fanishah */
