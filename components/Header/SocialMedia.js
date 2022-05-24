@@ -39,6 +39,21 @@ const social_media = [
     ),
     link: "https://www.linkedin.com/in/mohamad-salah-5a9451113/",
   },
+  {
+    website_name: "Twitter",
+    logo: (
+      <svg
+        viewBox="117.806 161.288 464.388 377.424"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M582.194 205.976c-17.078 7.567-35.424 12.68-54.71 14.991 19.675-11.78 34.769-30.474 41.886-52.726-18.407 10.922-38.798 18.857-60.497 23.111-17.385-18.488-42.132-30.064-69.538-30.064-52.603 0-95.266 42.663-95.266 95.307a97.3 97.3 0 0 0 2.454 21.68c-79.211-3.989-149.383-41.928-196.382-99.562-8.18 14.112-12.885 30.474-12.885 47.899 0 33.05 16.833 62.236 42.377 79.314a95.051 95.051 0 0 1-43.154-11.924v1.227c0 46.16 32.826 84.672 76.43 93.426a95.97 95.97 0 0 1-25.095 3.313 95.929 95.929 0 0 1-17.936-1.677c12.128 37.836 47.306 65.406 89.008 66.142-32.622 25.565-73.71 40.802-118.337 40.802-7.69 0-15.278-.45-22.743-1.33 42.173 27.06 92.24 42.807 146.029 42.807 175.275 0 271.094-145.17 271.094-271.073 0-4.09-.103-8.222-.287-12.312 18.612-13.458 34.769-30.208 47.51-49.29z"
+          fill="#1da1f2"
+        />
+      </svg>
+    ),
+    link: "https://www.twitter.com/mo7medsalah7",
+  },
 ];
 
 function SocialMedia() {
@@ -48,7 +63,7 @@ function SocialMedia() {
         return (
           <LightSpeed left>
             <li
-              className="shadow-lg rounded-full"
+              className=" rounded-full"
               style={{
                 width: "50px",
                 height: "50px",
@@ -56,7 +71,9 @@ function SocialMedia() {
               key={item.website_name}
             >
               <Link href={item.link}>
-                <a target="_blank">{item.logo}</a>
+                <a className="m-auto" target="_blank">
+                  {item.logo}
+                </a>
               </Link>
             </li>
           </LightSpeed>
