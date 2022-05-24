@@ -10,18 +10,12 @@ export default function Home() {
     <div className="">
       <Head>
         <title>Front Mo,S </title>
-        <meta
-          name="title"
-          property="og:title"
-          content="Front Mo,S"
-          key="title"
-        />
+        <meta name="title" property="og:title" content="Front Mo,S" />
         <meta name="type" property="og:type" content="website" />
         <meta
           name="description"
           property="og:description"
           content="Mohamed Salah Portofolio, A Frontend Developer and DevOps Engineer"
-          key="description"
         />
         <meta
           name="image"
