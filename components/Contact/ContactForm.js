@@ -104,7 +104,9 @@ export default () => {
       {status.info.error && (
         <div className="error">Error: {status.info.msg}</div>
       )}
-      {!status.info.error && status.info.msg && <p>{status.info.msg}</p>}
+      {!status.info.error && status.info.msg && (
+        <p className="text-center p-2 font-bold">{status.info.msg}</p>
+      )}
     </main>
   );
 };
