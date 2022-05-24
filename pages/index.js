@@ -14,6 +14,7 @@ export default function Home() {
           content="Mohamed Salah Portofolio, A Frontend Developer and DevOps Engineer"
         />
         <link rel="icon" href="/favicon.ico" />
+
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
