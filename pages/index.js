@@ -1,11 +1,12 @@
 import Head from "next/head";
+import image from "next/image";
 import Footer from "../components/Footer/Footer";
 import HeaderData from "../components/Header/HeaderData";
 import Skills from "../components/Skills/Skills";
 import Works from "../components/Works/Works";
 import BackgroundImage from "../public/moSalah.png";
 
-export default function Home({ title }) {
+export default function Home({ title, description, image, author }) {
   return (
     <div className="">
       <Head>
@@ -21,17 +22,13 @@ export default function Home({ title }) {
         <meta
           name="description"
           property="og:description"
-          content="Mohamed Salah Portofolio, A Frontend Developer and DevOps Engineer"
+          content={description}
         />
-        <meta
-          name="image"
-          property="og:image"
-          content="https://res.cloudinary.com/dexrp1zlw/image/upload/v1653409172/my-portofolio/image-seo.png"
-        />
+        <meta name="image" property="og:image" content={image} />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="625" />
 
-        <meta name="author" content="Mohamed Salah Abdelazeem" />
+        <meta name="author" content={author} />
 
         <link rel="icon" href="/favicon.ico" />
 
@@ -72,6 +69,11 @@ export async function getStaticProps(context) {
   return {
     props: {
       title: "Front Mo,S",
+      description:
+        "Mohamed Salah Portofolio, A Frontend Developer and DevOps Engineer",
+      image:
+        "https://res.cloudinary.com/dexrp1zlw/image/upload/v1653409172/my-portofolio/image-seo.png",
+      author: "Mohamed Salah Abdelazeem",
     }, // will be passed to the page component as props
   };
 }
