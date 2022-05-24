@@ -3,12 +3,21 @@ import Footer from "../components/Footer/Footer";
 import HeaderData from "../components/Header/HeaderData";
 import Skills from "../components/Skills/Skills";
 import Works from "../components/Works/Works";
+import BackgroundImage from "./moSalah.png";
 
 export default function Home() {
   return (
     <div className="">
       <Head>
         <title>Front Mo,S </title>
+        <meta property="og:title" content="Front Mo,S" key="title" />
+        <meta
+          property="og:description"
+          content="Mohamed Salah Portofolio, A Frontend Developer and DevOps Engineer"
+          key="description"
+        />
+        <meta property="og:image" content={BackgroundImage} />
+
         <meta
           name="description"
           content="Mohamed Salah Portofolio, A Frontend Developer and DevOps Engineer"
