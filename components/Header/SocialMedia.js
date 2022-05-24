@@ -63,7 +63,7 @@ const social_media = [
 
 function SocialMedia() {
   return (
-    <ul className="flex flex-row gap-4 mt-4 z-50">
+    <ul className="flex flex-row gap-4 sm:justify-center md:justify-start mt-4 z-50">
       {social_media.map((item) => {
         return (
           <LightSpeed left>

@@ -32,7 +32,7 @@ function Footer() {
                     </legend>
                     <div className="flex flex-col pl-[1rem] gap-2 ">
                       <span className="text-base font-bold tracking-wider">
-                        +(20) 120 489 4805
+                        +(20) 120 489 8905
                       </span>
                       <span className="text-base font-bold tracking-wider">
                         +(20) 114 160 1994
