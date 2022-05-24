@@ -9,6 +9,12 @@ export default function Home() {
   return (
     <div className="">
       <Head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta
+          name="viewport"
+          content="width=device-width,minimum-scale=1,initial-scale=1"
+        />
         <title>Front Mo,S </title>
         <meta name="title" property="og:title" content="Front Mo,S" />
         <meta name="type" property="og:type" content="website" />
