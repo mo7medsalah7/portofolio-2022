@@ -11,20 +11,24 @@ export default function Home() {
       <Head>
         <title>Front Mo,S </title>
         <meta
-          name="description"
-          content="Mohamed Salah Portofolio, A Frontend Developer and DevOps Engineer"
+          name="title"
+          property="og:title"
+          content="Front Mo,S"
+          key="title"
         />
-        <meta property="og:title" content="Front Mo,S" key="title" />
-        <meta property="og:type" content="website" />
+        <meta name="type" property="og:type" content="website" />
         <meta
+          name="description"
           property="og:description"
           content="Mohamed Salah Portofolio, A Frontend Developer and DevOps Engineer"
           key="description"
         />
         <meta
+          name="image"
           property="og:image"
           content="https://res.cloudinary.com/dexrp1zlw/image/upload/v1653408002/my-portofolio/moSalah_jyd1gb.png"
         />
+        <meta name="author" content="Mohamed Salah Abdelazeem" />
 
         <link rel="icon" href="/favicon.ico" />
 
