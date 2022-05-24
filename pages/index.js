@@ -16,22 +16,22 @@ export default function Home() {
           content="width=device-width,minimum-scale=1,initial-scale=1"
         />
         <title>Front Mo,S </title>
-        <meta name="title" property="og:title" content="[Front Mo,S]" />
+        <meta name="title" property="og:title" content="Front Mo,S" />
         <meta name="type" property="og:type" content="website" />
         <meta
           name="description"
           property="og:description"
-          content="[Mohamed Salah Portofolio, A Frontend Developer and DevOps Engineer]"
+          content="Mohamed Salah Portofolio, A Frontend Developer and DevOps Engineer"
         />
         <meta
           name="image"
           property="og:image"
-          content="[https://res.cloudinary.com/dexrp1zlw/image/upload/v1653409172/my-portofolio/image-seo.png]"
+          content="https://res.cloudinary.com/dexrp1zlw/image/upload/v1653409172/my-portofolio/image-seo.png"
         />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="625" />
 
-        <meta name="author" content="[Mohamed Salah Abdelazeem]" />
+        <meta name="author" content="Mohamed Salah Abdelazeem" />
 
         <link rel="icon" href="/favicon.ico" />
 
