@@ -7,6 +7,7 @@
   },
   "dependencies": {
     "@headlessui/react": "^1.4.2",
+    "axios": "^0.27.2",
     "cloudinary-build-url": "^0.2.4",
     "next": "latest",
     "react": "^17.0.2",

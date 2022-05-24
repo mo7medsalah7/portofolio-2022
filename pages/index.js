@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Footer from "../components/Footer/Footer";
 import HeaderData from "../components/Header/HeaderData";
 import Skills from "../components/Skills/Skills";
 import Works from "../components/Works/Works";
@@ -40,6 +41,7 @@ export default function Home() {
       <main className="main-font overflow-hidden">
         <Skills />
         <Works />
+        <Footer />
         {/* <Tabs /> */}
       </main>
     </div>
