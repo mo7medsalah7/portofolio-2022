@@ -13,19 +13,17 @@ export default function Home(props) {
           content="width=device-width,minimum-scale=1,initial-scale=1"
         />
         <title>{props.title} </title>
-        <meta name="og:title" property="og:title" content={props.title} />
         <meta name="og:type" property="og:type" content="website" />
         <meta
           name="og:description"
           property="og:description"
-          content={props.description}
+          content="Mohamed Salah Portofolio, A Frontend Developer and DevOps Engineer"
         />
-        <meta name="og:image" property="og:image" content={props.image} />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="625" />
-
-        <meta name="og:author" content={props.author} />
-
+        <meta
+          name="og:image"
+          property="og:image"
+          content="https://res.cloudinary.com/dexrp1zlw/image/upload/v1653409172/my-portofolio/image-seo.png"
+        />
         <link rel="icon" href="/favicon.ico" />
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
