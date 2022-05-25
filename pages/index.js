@@ -9,7 +9,26 @@ export default function Home() {
     <div>
       <Head>
         <title> Front Mo,S </title>
-
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          rel="preload"
+          href="/fonts/Century_Gothic.ttf"
+          as="font"
+          type="font/ttf"
+          crossOrigin=""
+        />
+        <link
+          rel="preload"
+          href="/fonts/gothicb.ttf"
+          as="font"
+          type="font/ttf"
+          crossOrigin=""
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Bangers&display=swap"
+          rel="stylesheet"
+        />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="og:type" property="og:type" content="website" />
         <meta
