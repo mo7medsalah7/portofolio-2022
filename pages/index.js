@@ -1,19 +1,12 @@
 import Head from "next/head";
-import { useRouter } from "next/router";
-import image from "next/image";
 import Footer from "../components/Footer/Footer";
 import HeaderData from "../components/Header/HeaderData";
 import Skills from "../components/Skills/Skills";
 import Works from "../components/Works/Works";
-import BackgroundImage from "../public/moSalah.png";
 
 export default function Home(props) {
-  const router = useRouter();
-
-  let data = props.apiResponse;
-
   return (
-    <div className="">
+    <>
       <Head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -67,7 +60,7 @@ export default function Home(props) {
         {/* <Tabs /> */}
       </main>
       <Footer />
-    </div>
+    </>
   );
 }
 
