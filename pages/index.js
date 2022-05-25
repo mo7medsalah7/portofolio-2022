@@ -4,7 +4,7 @@ import HeaderData from "../components/Header/HeaderData";
 import Skills from "../components/Skills/Skills";
 import Works from "../components/Works/Works";
 
-export default function Home(props) {
+export default function Home() {
   return (
     <>
       <Head>
@@ -12,7 +12,7 @@ export default function Home(props) {
           name="viewport"
           content="width=device-width,minimum-scale=1,initial-scale=1"
         />
-        <title>{props.title} </title>
+        <title>Front Mo,S</title>
         <meta name="og:type" property="og:type" content="website" />
         <meta
           name="og:description"
@@ -58,17 +58,4 @@ export default function Home(props) {
       <Footer />
     </>
   );
-}
-
-export async function getStaticProps(context) {
-  return {
-    props: {
-      title: "Front Mo,S",
-      description:
-        "Mohamed Salah Portofolio, A Frontend Developer and DevOps Engineer",
-      image:
-        "https://res.cloudinary.com/dexrp1zlw/image/upload/v1653409172/my-portofolio/image-seo.png",
-      author: "Mohamed Salah Abdelazeem",
-    },
-  };
 }
