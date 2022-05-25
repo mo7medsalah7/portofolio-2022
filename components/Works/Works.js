@@ -24,8 +24,7 @@ const worksDetails = [
 
   {
     projectName: "Real Estate Explore",
-    projectLink:
-      "https://real-estate-explorer-fiye0ru7t-mo7medsalah7.vercel.app/",
+    projectLink: "https://real-estate-explorer.vercel.app/",
     projectDesc: "Explore a room !",
     cloudinary_image_v: "v1648738635",
     cloudinary_image_name: "real-estate_gcjogr",
