@@ -5,49 +5,41 @@ import "../styles/global.css";
 import LoadingScreeen from "../components/LoadingScreeen";
 
 function MyApp({ Component, pageProps }) {
-  const [loading, setLoading] = React.useState(true);
+  // const [loading, setLoading] = React.useState(true);
 
-  React.useEffect(() => {
-    setLoading(false);
-  }, []);
+  // React.useEffect(() => {
+  //   setLoading(false);
+  // }, []);
   return (
     <>
-      {!loading ? (
-        <React.Fragment>
-          {/* Head  */}
-          <Head>
-            <link rel="preconnect" href="https://fonts.googleapis.com" />
-            <link
-              rel="preconnect"
-              href="https://fonts.gstatic.com"
-              crossorigin
-            />
-            <link
-              rel="preload"
-              href="/fonts/Century_Gothic.ttf"
-              as="font"
-              type="font/ttf"
-              crossOrigin=""
-            />
-            <link
-              rel="preload"
-              href="/fonts/gothicb.ttf"
-              as="font"
-              type="font/ttf"
-              crossOrigin=""
-            />
-            <link
-              href="https://fonts.googleapis.com/css2?family=Bangers&display=swap"
-              rel="stylesheet"
-            />
-          </Head>
-          <>
-            <Component {...pageProps} />
-          </>
-        </React.Fragment>
-      ) : (
-        <LoadingScreeen />
-      )}
+      <React.Fragment>
+        {/* Head  */}
+        <Head>
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+          <link
+            rel="preload"
+            href="/fonts/Century_Gothic.ttf"
+            as="font"
+            type="font/ttf"
+            crossOrigin=""
+          />
+          <link
+            rel="preload"
+            href="/fonts/gothicb.ttf"
+            as="font"
+            type="font/ttf"
+            crossOrigin=""
+          />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Bangers&display=swap"
+            rel="stylesheet"
+          />
+        </Head>
+        <>
+          <Component {...pageProps} />
+        </>
+      </React.Fragment>
     </>
   );
 }
