@@ -6,7 +6,7 @@ import Works from "../components/Works/Works";
 
 export default function Home() {
   return (
-    <>
+    <div>
       <Head>
         <title>Front Mo,S</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
@@ -38,6 +38,6 @@ export default function Home() {
         {/* <Tabs /> */}
       </main>
       <Footer />
-    </>
+    </div>
   );
 }
