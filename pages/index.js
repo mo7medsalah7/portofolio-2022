@@ -13,7 +13,13 @@ export default function Home() {
           content="width=device-width,minimum-scale=1,initial-scale=1"
         />
         <title>Front Mo,S</title>
+        <meta
+          name="og:title"
+          property="og:title"
+          content="Mohamed Salah Portofolio"
+        />
         <meta name="og:type" property="og:type" content="website" />
+
         <meta
           name="og:description"
           property="og:description"
