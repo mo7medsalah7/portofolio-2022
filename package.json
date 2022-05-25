@@ -1,4 +1,5 @@
 {
+  "name": "portofolio",
   "private": true,
   "scripts": {
     "dev": "next dev --port=5000",
