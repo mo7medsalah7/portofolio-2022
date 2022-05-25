@@ -8,11 +8,8 @@ export default function Home() {
   return (
     <>
       <Head>
-        <meta
-          name="viewport"
-          content="width=device-width,minimum-scale=1,initial-scale=1"
-        />
         <title>Front Mo,S</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta
           name="og:title"
           property="og:title"
@@ -31,27 +28,6 @@ export default function Home() {
           content="https://res.cloudinary.com/dexrp1zlw/image/upload/v1653409172/my-portofolio/image-seo.png"
         />
         <link rel="icon" href="/favicon.ico" />
-
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-          rel="preload"
-          href="/fonts/Century_Gothic.ttf"
-          as="font"
-          type="font/ttf"
-          crossOrigin=""
-        />
-        <link
-          rel="preload"
-          href="/fonts/gothicb.ttf"
-          as="font"
-          type="font/ttf"
-          crossOrigin=""
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Bangers&display=swap"
-          rel="stylesheet"
-        />
       </Head>
       <header>
         <HeaderData />
