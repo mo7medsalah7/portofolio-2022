@@ -14,6 +14,7 @@ function MyApp({ Component, pageProps }) {
     <>
       {!loading ? (
         <React.Fragment>
+          {/* Head  */}
           <Head>
             <link rel="preconnect" href="https://fonts.googleapis.com" />
             <link
