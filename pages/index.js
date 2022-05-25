@@ -10,11 +10,7 @@ export default function Home() {
       <Head>
         <title>Front Mo,S</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <meta
-          name="og:title"
-          property="og:title"
-          content="Mohamed Salah Portofolio"
-        />
+
         <meta name="og:type" property="og:type" content="website" />
 
         <meta
