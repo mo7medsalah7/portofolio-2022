@@ -16,8 +16,6 @@ function MyApp({ Component, pageProps }) {
         <React.Fragment>
           {/* Head  */}
           <Head>
-            <title> Front Mo,S </title>
-
             <link rel="preconnect" href="https://fonts.googleapis.com" />
             <link
               rel="preconnect"
