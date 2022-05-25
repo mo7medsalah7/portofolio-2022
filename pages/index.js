@@ -8,11 +8,9 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Front Mo,S</title>
+        <title>Mo Salah</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-
         <meta name="og:type" property="og:type" content="website" />
-
         <meta
           name="og:description"
           property="og:description"
@@ -23,7 +21,6 @@ export default function Home() {
           property="og:image"
           content="https://res.cloudinary.com/dexrp1zlw/image/upload/v1653409172/my-portofolio/image-seo.png"
         />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
       <header>
         <HeaderData />
