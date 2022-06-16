@@ -1,10 +1,10 @@
-import React from "react";
-import Image from "next/image";
-import BackgroundImage from "./moSalah.png";
-import VanillaTilt from "vanilla-tilt";
-import HeadShake from "react-reveal/HeadShake";
-import Slide from "react-reveal/Slide";
-import SocialMedia from "./SocialMedia";
+import React from 'react';
+import Image from 'next/image';
+import BackgroundImage from './moSalah.png';
+import VanillaTilt from 'vanilla-tilt';
+import HeadShake from 'react-reveal/HeadShake';
+import Slide from 'react-reveal/Slide';
+import SocialMedia from './SocialMedia';
 
 function HeaderData() {
   const tiltRef = React.useRef();
@@ -119,7 +119,7 @@ function HeaderData() {
       <div className="z-50">
         <div
           className=" flex w-full min-h-screen z-[1] bg-[#fff]"
-          style={{ width: "min(100% - 0rem)" }}
+          style={{ width: 'min(100% - 0rem)' }}
         >
           <div className=" m-auto">
             <div className="flex flex-col">
@@ -134,7 +134,7 @@ function HeaderData() {
                 </p>
                 <div className="ml-2">
                   <span className="sm:text-4xl md:text-4xl lg:text-4xl xl:text-4xl 2xl:text-7xl">
-                    Frontend Engineer, DevOps
+                    Frontend Engineer
                   </span>
                 </div>
               </div>
