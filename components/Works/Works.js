@@ -7,6 +7,7 @@ import BudgetPlusScreen from '../../public/budgetplus.png';
 import GroceryAppScreen from '../../public/GroceryApp.png';
 import SimpleCalculatorScreen from '../../public/simple-calculator.png';
 import QuizAppScreen from '../../public/QuizApp.png';
+import ColorGeneratorScreen from '../../public/ColorGenerator.png';
 import SearchFilterScreen from '../../public/search-filter.png';
 import FormValidatorScreen from '../../public/form-validator.png';
 import WorksHeader from './WorksHeader';
@@ -48,6 +49,15 @@ const worksDetails = [
     cloudinary_image_name: 'grocery-shop',
     projectDesc: 'Add to your grocery.',
     projectScreen: GroceryAppScreen,
+    screenAlt: 'website image',
+  },
+  {
+    projectName: 'Color Generator',
+    projectLink: 'https://color-generator-beta.vercel.app/',
+    cloudinary_image_v: 'v1659364256',
+    cloudinary_image_name: 'color-generator',
+    projectDesc: 'Generate your favorite color family.',
+    projectScreen: ColorGeneratorScreen,
     screenAlt: 'website image',
   },
   {
