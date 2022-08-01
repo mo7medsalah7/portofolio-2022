@@ -23,6 +23,9 @@
 
 
 @layer utilities {
+	html {
+		scroll-behavior: smooth;
+	}
 	.main-font {
 		/* font-family: 'Century Gothic', sans-serif; */
 	}
