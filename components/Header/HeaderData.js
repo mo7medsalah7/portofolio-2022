@@ -134,8 +134,9 @@ function HeaderData() {
                 </p>
                 <div className="ml-2">
                   <span className="sm:text-4xl md:text-4xl lg:text-4xl xl:text-4xl 2xl:text-7xl">
-                    Frontend Engineer
+                    DevOps Engineer
                   </span>
+                  <span>Ex Frontend Engineer</span>
                 </div>
               </div>
               {/* <div className="buttons flex gap-[12px]">
