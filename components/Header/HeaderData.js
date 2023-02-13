@@ -133,7 +133,7 @@ function HeaderData() {
                   Your Next
                 </p>
                 <div className="ml-2">
-                  <span className="sm:text-4xl md:text-4xl lg:text-4xl xl:text-4xl 2xl:text-7xl">
+                  <span className="block sm:text-4xl md:text-4xl lg:text-4xl xl:text-4xl 2xl:text-7xl">
                     DevOps Engineer
                   </span>
                   <span>Ex Frontend Engineer</span>
