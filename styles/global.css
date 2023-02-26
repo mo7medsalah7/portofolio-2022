@@ -42,7 +42,7 @@
 		-webkit-text-fill-color: #0e182a;
 		-webkit-text-stroke-width: 1.5px;
 		-webkit-text-stroke-color: #fff;
-		text-shadow: 8px 8px ##fff, 20px 20px #0e182a;
+		text-shadow: 8px 8px #fff, 20px 20px #0e182a;
 		margin-bottom: 1rem;
 	}
 	.footer_data .brandName {
