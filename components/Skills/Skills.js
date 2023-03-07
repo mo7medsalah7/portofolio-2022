@@ -7376,9 +7376,9 @@ function Skills() {
           </svg>
         </div>
         {skill.skillType === 'devops' ? (
-          <Item items={frontendItems()} />
-        ) : (
           <Item items={devopsItems()} />
+        ) : (
+          <Item items={frontendItems} />
         )}
       </div>
     </WrapperSection>
