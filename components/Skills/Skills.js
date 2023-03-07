@@ -7309,39 +7309,6 @@ function Skills() {
         <div className="m-auto text-center flex justify-center gap-1 mt-2 mb-12">
           <button
             className="c-button c-button--gooey"
-            onClick={() => setSkill({ skillType: 'frontend' })}
-          >
-            FrontEnd
-            <div className="c-button__blobs">
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-          </button>
-          <svg
-            style={{ display: 'block', height: 0, width: 0 }}
-            version="1.1"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <defs>
-              <filter id="goo">
-                <feGaussianBlur
-                  result="blur"
-                  stdDeviation="10"
-                  in="SourceGraphic"
-                ></feGaussianBlur>
-                <feColorMatrix
-                  result="goo"
-                  values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
-                  mode="matrix"
-                  in="blur"
-                ></feColorMatrix>
-                <feBlend in2="goo" in="SourceGraphic"></feBlend>
-              </filter>
-            </defs>
-          </svg>
-          <button
-            className="c-button c-button--gooey"
             onClick={() => setSkill({ skillType: 'devops' })}
           >
             DevOps
@@ -7373,6 +7340,40 @@ function Skills() {
               </defs>
             </svg>
           </button>
+
+          <button
+            className="c-button c-button--gooey"
+            onClick={() => setSkill({ skillType: 'frontend' })}
+          >
+            FrontEnd
+            <div className="c-button__blobs">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </button>
+          <svg
+            style={{ display: 'block', height: 0, width: 0 }}
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <defs>
+              <filter id="goo">
+                <feGaussianBlur
+                  result="blur"
+                  stdDeviation="10"
+                  in="SourceGraphic"
+                ></feGaussianBlur>
+                <feColorMatrix
+                  result="goo"
+                  values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+                  mode="matrix"
+                  in="blur"
+                ></feColorMatrix>
+                <feBlend in2="goo" in="SourceGraphic"></feBlend>
+              </filter>
+            </defs>
+          </svg>
         </div>
         {skill.skillType === 'devops' ? (
           <Item items={devopsItems()} />
