@@ -1,8 +1,8 @@
-import React from "react";
-import Head from "next/head";
-import "../styles/global.css";
+import React from 'react';
+import Head from 'next/head';
+import '../styles/global.css';
 
-import LoadingScreeen from "../components/LoadingScreeen";
+import LoadingScreeen from '../components/LoadingScreeen';
 
 function MyApp({ Component, pageProps }) {
   const [loading, setLoading] = React.useState(true);
@@ -13,7 +13,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title> Front Mo,S </title>
+        <title> DevOpes Mo,S </title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
