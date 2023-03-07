@@ -126,7 +126,7 @@ function HeaderData() {
               <div className="mb-6">
                 <HeadShake>
                   <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold brandName">
-                    Mo Salah
+                    Mohamed Salah
                   </h1>
                 </HeadShake>
                 <p className="border-b-2 border-solid border-[#40a8cc]">
