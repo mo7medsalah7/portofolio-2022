@@ -7378,7 +7378,7 @@ function Skills() {
         {skill.skillType === 'devops' ? (
           <Item items={devopsItems()} />
         ) : (
-          <Item items={frontendItems} />
+          <Item items={frontendItems()} />
         )}
       </div>
     </WrapperSection>
